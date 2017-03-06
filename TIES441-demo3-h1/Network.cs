@@ -23,7 +23,11 @@ namespace TIES441_demo3_h1
              * source such as settings etc but for
              * demo, this is -good nuff-.
              *
-             * Useful for adding new connections. */
+             * Useful for adding new connections.
+             * 
+             * Use PP Adapter if class is there.
+             * Lazy as f.
+             *  */
 
             if (Type.GetType("TIES441_demo3_h1.PP_Adapter") != null)
             {
@@ -100,12 +104,12 @@ namespace TIES441_demo3_h1
         }
         public void closeConnection()
         {
-            Console.WriteLine("Acme closeconnection");
+            Console.WriteLine("Acme close connection");
         }
 
         public void openConnection()
         {
-            Console.WriteLine("Acme openconnection");
+            Console.WriteLine("Acme open connection");
         }
 
         public Byte[] receiveData()
