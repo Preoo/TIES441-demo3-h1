@@ -17,15 +17,22 @@ namespace TIES441_demo3_h1
         }
         private IConnection SetConnection()
         {
-           /* Used to select connection, 
-            * so operating system doesn't need to.
-            * Could get connection from external 
-            * source such as settings etc but for
-            * demo, this is -good nuff-.
-            *
-            * Useful for adding new connections. */
-            return new Acme();
+            /* Used to select connection, 
+             * so operating system doesn't need to.
+             * Could get connection from external 
+             * source such as settings etc but for
+             * demo, this is -good nuff-.
+             *
+             * Useful for adding new connections. */
 
+            if (Type.GetType("TIES441_demo3_h1.PP_Adapter") != null)
+            {
+                return new PP_Adapter();
+            }
+            else
+            {
+                return new Acme();
+            }
         }
 
         public void closeConnection()

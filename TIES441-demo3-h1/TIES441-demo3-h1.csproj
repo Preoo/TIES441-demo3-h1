@@ -47,6 +47,7 @@
     <Compile Include="Network.cs" />
     <Compile Include="operatingsystem.cs" />
     <Compile Include="PP Adapter.cs" />
+    <Compile Include="PP Connection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

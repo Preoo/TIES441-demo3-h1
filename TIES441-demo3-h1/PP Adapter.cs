@@ -8,24 +8,30 @@ namespace TIES441_demo3_h1
 {
     class PP_Adapter : IConnection
     {
+        public PP_Adapter()
+        {
+            Console.WriteLine("Init PP_Adapter");
+        }
+
         public void closeConnection()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Init PP_Adapter");
         }
 
         public void openConnection()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Init PP_Adapter");
         }
 
         public byte[] receiveData()
         {
-            throw new NotImplementedException();
+            Byte[] temp = new Byte[1];
+            return temp;
         }
 
         public void sendData(byte[] s_data)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Init PP_Adapter");
         }
     }
 }
