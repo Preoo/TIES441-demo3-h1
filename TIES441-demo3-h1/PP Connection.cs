@@ -21,17 +21,15 @@ namespace TIES441_demo3_h1
 
         public Byte[] communicate(byte[] data, bool readFlag)
         {
-            //Byte[] buffer = new Byte[data.Length];
             if (readFlag)
             {
-                //buffer = data;
                 Console.WriteLine("PP Read data: {0} of length {1} and value = {2}", 
                     data, data.Length, new ASCIIEncoding().GetString(data) );
                 return new Byte[0];
             }
             else
             {
-                Byte[] temp = Encoding.ASCII.GetBytes("koirat haukkuu ja karavaani kulkee"); ;
+                Byte[] temp = Encoding.ASCII.GetBytes("\n Koirat haukkuu ja karavaani kulkee"); ;
                 Console.WriteLine("PP Write data via Adapter");
                 return temp;
             }

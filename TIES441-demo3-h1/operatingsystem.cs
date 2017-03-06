@@ -19,7 +19,6 @@ namespace TIES441_demo3_h1
 
         public void sendData()
         {
-            //Console.WriteLine("Sent data: {0}", networkdata.ToString());
             INetwork network = new Network();
             network.openConnection();
             network.sendData(networkdata);
@@ -28,7 +27,6 @@ namespace TIES441_demo3_h1
 
         public void receiveData()
         {
-            //Console.WriteLine("Received data -dummy-");
             INetwork network = new Network();
             network.openConnection();
             networkdata = network.receiveData();

@@ -46,7 +46,6 @@ namespace TIES441_demo3_h1
 
         public void openConnection()
         {
-            //Console.WriteLine("Opening connection");
             _connection.openConnection();
         }
 
