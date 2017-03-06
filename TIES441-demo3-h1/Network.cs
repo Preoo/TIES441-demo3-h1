@@ -25,6 +25,7 @@ namespace TIES441_demo3_h1
             *
             * Useful for adding new connections. */
             return new Acme();
+
         }
 
         public void closeConnection()
