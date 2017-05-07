@@ -26,7 +26,6 @@ namespace TIES441_demo3_h1
              * Useful for adding new connections.
              * 
              * Use PP Adapter if class is there.
-             * Lazy as f.
              *  */
 
             if (Type.GetType("TIES441_demo3_h1.PP_Adapter") != null)
